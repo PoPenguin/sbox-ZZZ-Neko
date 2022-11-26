@@ -1,4 +1,4 @@
-# ZZZ Character Model Ported to S&box
+# ZZZ Neko Character Model Ported to S&box
 ### This repo contains [MToon](https://github.com/edisonlee55/sbox-MToon) which this model uses, and model & material files. The original model and textures were made by [Mihoyo](https://www.mihoyo.com/). Only for studying purposes.
 
 ### You need to move these file to the core folder,then you can open it in Model Doc.
