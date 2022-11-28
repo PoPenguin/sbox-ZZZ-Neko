@@ -3,4 +3,4 @@
 
 ### You need to move these file to the core folder,then you can open it in Model Doc.
 #### This model can be use in HL:A and S&box, but I am unsure whether it will work in HL:A. It might also be broken because of the frequent updates of S&box, but it will be fixed eventually.
-![A picture showing Neko lying on the grass.](https://user-images.githubusercontent.com/99338058/203945499-b7ab1e28-52fe-4c1d-8605-d44ac4d1eaff.jpg)
+![A picture showing Neko in Model Doc with animation.](https://user-images.githubusercontent.com/99338058/204173978-90b0bba4-1b11-4597-bcce-d44a28180fc9.png)
