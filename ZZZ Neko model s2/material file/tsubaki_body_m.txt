@@ -1,0 +1,4 @@
+"settings"
+{
+	"brightness"		"100.000000"
+}

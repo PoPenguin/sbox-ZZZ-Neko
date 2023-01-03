@@ -1,0 +1,87 @@
+// THIS FILE IS AUTO-GENERATED
+
+Layer0
+{
+	shader "mtoon.shader"
+
+	//---- Animation ----
+	F_MORPH_SUPPORTED 1
+
+	//---- Blending ----
+	F_ADDITIVE_BLEND 1
+
+	//---- MToon Outline (WIP) ----
+	F_OUTLINE_COLOR_MODE 1 // MixedLighting
+	F_OUTLINE_WIDTH_MODE 1 // WorldCoordinates
+
+	//---- Rendering ----
+	F_DO_NOT_CAST_SHADOWS 1
+
+	//---- Texture Filtering ----
+	F_TEXTURE_FILTERING 1 // Bilinear
+
+	//---- Z-Buffering ----
+	F_DISABLE_Z_BUFFERING 1
+	F_DISABLE_Z_PREPASS 1
+
+	//---- Color ----
+	g_flModelTintAmount "0.539"
+	g_vColorTint "[0.317647 0.262745 0.196078 1.000000]"
+
+	//---- Fade ----
+	g_flFadeExponent "16.000"
+
+	//---- Material ----
+	g_flTintColor "[0.482353 0.482353 0.482353 1.000000]"
+	TextureAmbientOcclusion "materials/models/neko/Tsubaki_Body_N.png"
+	TextureBlendMask "materials/models/neko/Tsubaki_Body_N.png"
+	TextureColor "materials/models/neko/Tsubaki_Body_D.png"
+	TextureMetalness "materials/models/neko/Tsubaki_Body_N.png"
+	TextureNormal "materials/models/neko/Tsubaki_Body_N.png"
+	TextureRoughness "materials/models/neko/Tsubaki_Body_N.png"
+	TextureTintMask "materials/default/default.tga"
+
+	//---- MToon Color ----
+	InputLitTexture "materials/models/neko/Tsubaki_Body_D.png"
+	InputShadeTexture "materials/models/neko/Tsubaki_Body_D.png"
+	LitColor "[0.850980 0.745098 0.650980 1.000000]"
+	ShadeColor "[0.215686 0.113725 0.082353 1.000000]"
+
+	//---- MToon Emission ----
+	EmissionColor "[0.439216 0.439216 0.435294 1.000000]"
+	InputEmissionMap "[0.000000 0.000000 0.000000 1.000000]"
+	InputMatCap "[0.023529 0.015686 0.015686 1.000000]"
+
+	//---- MToon Lighting ----
+	IndirectLightIntensity "0.933"
+	InputShadingGradeTexture "[0.443137 0.439216 0.443137 1.000000]"
+	LightColorAttenuation "0.485"
+	ShadingGradeRate "0.061"
+	ShadingShift "0.236"
+	ShadingToony "0.895"
+
+	//---- MToon Outline ----
+	InputOutlineWidthTexture "[0.341176 0.266667 0.211765 1.000000]"
+	OutlineColor "[0.407843 0.352941 0.333333 1.000000]"
+	OutlineLightingMix "0.801"
+	OutlineWidth "0.963"
+
+	//---- MToon Rim ----
+	InputRimTexture "[0.450980 0.439216 0.435294 1.000000]"
+	RimColor "[0.278431 0.247059 0.235294 1.000000]"
+	RimFresnelPower "100.000"
+	RimLift "0.228"
+	RimLightingMix "0.545"
+
+	//---- Texture Coordinates ----
+	g_nScaleTexCoordUByModelScaleAxis "3"
+	g_nScaleTexCoordVByModelScaleAxis "3"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+
+	SystemAttributes
+	{
+		PhysicsSurfaceProperties "flesh"
+	}
+}

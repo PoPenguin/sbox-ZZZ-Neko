@@ -1,0 +1,189 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	_class = "CPostProcessData"
+	m_layers = 
+	[
+		{
+			_class = "CColorBalanceColorCorrectionLayer"
+			m_name = "Color Balance 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_nRedCyanBalS = 1
+			m_nRedCyanBalM = -29
+			m_nRedCyanBalH = 3
+			m_nGreenMagentaBalS = 0
+			m_nGreenMagentaBalM = -13
+			m_nGreenMagentaBalH = 0
+			m_nBlueYellowBalS = 0
+			m_nBlueYellowBalM = 0
+			m_nBlueYellowBalH = 0
+			m_bPreserveLuminosity = true
+		},
+		{
+			_class = "CColorTintColorCorrectionLayer"
+			m_name = "Color Tint 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_nTintColorR = 170
+			m_nTintColorG = 102
+			m_nTintColorB = 87
+			m_nStrength = 5
+			m_bPreserveLuminosity = true
+		},
+		{
+			_class = "CBrightnessContrastColorCorrectionLayer"
+			m_name = "Brightness/Contrast 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_nBrightness = 10
+			m_nContrast = 34
+		},
+		{
+			_class = "CBloomLayer"
+			m_name = "Bloom 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_params = 
+			{
+				m_blendMode = "BLOOM_BLEND_ADD"
+				m_flBloomStrength = 0.03
+				m_flScreenBloomStrength = 1.0
+				m_flBlurBloomStrength = 1.0
+				m_flBloomThreshold = 0.827
+				m_flBloomThresholdWidth = 0.4395
+				m_flSkyboxBloomStrength = 0.1503
+				m_flBloomStartValue = 1.0
+				m_flBlurWeight = 
+				[
+					0.2176, 0.1036, 0.0414, 0.0775,
+					0.0311,
+				]
+				m_vBlurTint = 
+				[
+					[ 1.0, 0.921582, 0.701102 ],
+					[ 0.822786, 0.814847, 0.806952 ],
+					[ 1.0, 0.775822, 0.55834 ],
+					[ 1.0, 1.0, 1.0 ],
+					[ 1.0, 1.0, 1.0 ],
+				]
+			}
+		},
+		{
+			_class = "CLevelsColorCorrectionLayer"
+			m_name = "Levels 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_nInputBlackPointRGB = 0
+			m_nInputBlackPointR = 0
+			m_nInputBlackPointG = 0
+			m_nInputBlackPointB = 0
+			m_nInputWhitePointRGB = 222
+			m_nInputWhitePointR = 255
+			m_nInputWhitePointG = 255
+			m_nInputWhitePointB = 255
+			m_nOutputBlackPointRGB = 10
+			m_nOutputBlackPointR = 0
+			m_nOutputBlackPointG = 0
+			m_nOutputBlackPointB = 0
+			m_nOutputWhitePointRGB = 255
+			m_nOutputWhitePointR = 255
+			m_nOutputWhitePointG = 255
+			m_nOutputWhitePointB = 255
+			m_flGammaRGB = 1.15
+			m_flGammaR = 1.0
+			m_flGammaG = 1.0
+			m_flGammaB = 1.0
+		},
+		{
+			_class = "CVibranceColorCorrectionLayer"
+			m_name = "Saturation/Vibrance 0"
+			m_nOpacityPercent = 80
+			m_bVisible = true
+			m_pLayerMask = null
+			m_nVibrance = -13
+			m_nSaturation = 4
+		},
+		{
+			_class = "CHueSaturationColorCorrectionLayer"
+			m_name = "Hue/Saturation 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_nHueMaster = -1
+			m_nHueRed = 0
+			m_nHueYellow = 0
+			m_nHueGreen = 0
+			m_nHueCyan = 0
+			m_nHueBlue = 0
+			m_nHueMagenta = 0
+			m_nSaturationMaster = 1
+			m_nSaturationRed = 0
+			m_nSaturationYellow = 0
+			m_nSaturationGreen = 0
+			m_nSaturationCyan = 0
+			m_nSaturationBlue = 0
+			m_nSaturationMagenta = 0
+			m_nBrightnessMaster = -12
+			m_nBrightnessRed = 0
+			m_nBrightnessYellow = 0
+			m_nBrightnessGreen = 0
+			m_nBrightnessCyan = 0
+			m_nBrightnessBlue = 0
+			m_nBrightnessMagenta = 0
+		},
+		{
+			_class = "CCurvesColorCorrectionLayer"
+			m_name = "Curves 0"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_curvePointsRGB = 
+			[
+				[ 0.0, 0.0 ],
+				[ 76.0, 75.0 ],
+				[ 114.0, 125.866714 ],
+				[ 180.0, 192.097076 ],
+				[ 219.0, 233.701218 ],
+				[ 255.0, 255.0 ],
+			]
+			m_curvePointsR = 
+			[
+				[ 0.0, 0.0 ],
+				[ 255.0, 255.0 ],
+			]
+			m_curvePointsG = 
+			[
+				[ 0.0, 0.0 ],
+				[ 255.0, 255.0 ],
+			]
+			m_curvePointsB = 
+			[
+				[ 0.0, 0.0 ],
+				[ 255.0, 255.0 ],
+			]
+		},
+		{
+			_class = "CToneMappingLayer"
+			m_name = "Tone Mapping 1"
+			m_nOpacityPercent = 100
+			m_bVisible = true
+			m_pLayerMask = null
+			m_params = 
+			{
+				m_flExposureBias = -0.9872
+				m_flShoulderStrength = 0.1076
+				m_flLinearStrength = 0.3856
+				m_flLinearAngle = 0.0447
+				m_flToeStrength = 0.2377
+				m_flToeNum = 0.0135
+				m_flToeDenom = 0.3498
+				m_flWhitePoint = 2.529
+			}
+		},
+	]
+}

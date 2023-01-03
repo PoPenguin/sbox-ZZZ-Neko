@@ -19,16 +19,16 @@
 								to = "materials/rebody.vmat"
 							},
 							{
+								from = "maoyou_weapon.vmat"
+								to = "materials/rebody.vmat"
+							},
+							{
 								from = "maoyou_face.vmat"
 								to = "materials/models/neko/hairr.vmat"
 							},
 							{
 								from = "maoyou_hair.vmat"
 								to = "materials/rerehair.vmat"
-							},
-							{
-								from = "maoyou_weapon.vmat"
-								to = "materials/rebody.vmat"
 							},
 						]
 						use_global_default = false
@@ -170,7 +170,7 @@
 					},
 					{
 						_class = "Folder"
-						name = "PhysicsJoints_Disabled"
+						name = "PhysicsJoints_WIP"
 						note = "Disable some joints to keep it simple."
 						children = 
 						[
@@ -239,6 +239,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsJoints_Arm_Left"
+						note = "All the Physics Joints for the left arm!"
 						children = 
 						[
 							{
@@ -316,6 +317,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsJoints_Arm_Right"
+						note = "All the Physics Joints for the right arm!"
 						children = 
 						[
 							{
@@ -393,6 +395,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsJoints_Body"
+						note = "All the Physics Joints for the body!"
 						children = 
 						[
 							{
@@ -490,6 +493,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsJoints_Weapon"
+						note = "All the Physics Joints for the weapon!"
 						children = 
 						[
 							{
@@ -525,6 +529,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsJoints_Hair"
+						note = "All the Physics Joints for the hair!\n(Don\'t delete!)"
 						children = 
 						[
 							{
@@ -562,6 +567,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsJoints_Tail_Right"
+						note = "All the Physics Joints for the right tail!"
 						children = 
 						[
 							{
@@ -674,6 +680,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsJoints_Tail_Left"
+						note = "All the Physics Joints for the left tail!"
 						children = 
 						[
 							{
@@ -786,6 +793,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsJoints_Hair1"
+						note = "All the Physics Joints for the hair!\n(Don\'t delete!)"
 						children = 
 						[
 							{
@@ -928,7 +936,7 @@
 					},
 					{
 						_class = "Folder"
-						name = "PhysicsShapes_Disabled"
+						name = "PhysicsShapes_WIP"
 						note = "Disable some joints to keep it simple."
 						children = 
 						[
@@ -975,6 +983,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsShapes_Arm_Left"
+						note = "All the Physics Shapes for the left arm!"
 						children = 
 						[
 							{
@@ -1025,6 +1034,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsShapes_Arm_Right"
+						note = "All the Physics Shapes for the right arm!"
 						children = 
 						[
 							{
@@ -1075,6 +1085,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsShapes_Body"
+						note = "All the Physics Shapes for the body!"
 						children = 
 						[
 							{
@@ -1145,6 +1156,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsShapes_Weapon"
+						note = "All the Physics Shapes for the weapon!"
 						children = 
 						[
 							{
@@ -1168,6 +1180,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsShapes_Hair"
+						note = "All the Physics Shapes for the hair!"
 						children = 
 						[
 							{
@@ -1207,6 +1220,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsShapes_Tail_Left"
+						note = "All the Physics Shapes for the left tail!"
 						children = 
 						[
 							{
@@ -1268,6 +1282,7 @@
 					{
 						_class = "Folder"
 						name = "PhysicsShapes_Tail_Right"
+						note = "All the Physics Shapes for the right tail!"
 						children = 
 						[
 							{
@@ -1356,93 +1371,2173 @@
 				children = 
 				[
 					{
-						_class = "MorphFrame"
-						name = "laugh"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						morph_weights = 
+						_class = "Folder"
+						name = "Face_Pose"
+						children = 
 						[
 							{
-								morph = "EB_Relax"
-								weight = 0.48
+								_class = "MorphFrame"
+								name = "laugh"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								morph_weights = 
+								[
+									{
+										morph = "EB_L___"
+										weight = 0.505
+									},
+									{
+										morph = "EB_R___"
+										weight = 0.548
+									},
+									{
+										morph = "EB____"
+										weight = 0.063
+									},
+									{
+										morph = "EB_______"
+										weight = 0.86
+									},
+									{
+										morph = "EYE_Wink_L"
+										weight = 1.0
+									},
+									{
+										morph = "Eye_Angry"
+										weight = 0.311
+									},
+									{
+										morph = "Eye_______1"
+										weight = 0.129
+									},
+									{
+										morph = "Eye_____________"
+										weight = 0.397
+									},
+									{
+										morph = "Mouth_Aa4Talk2"
+										weight = 0.038
+									},
+									{
+										morph = "Mouth_AaWa003"
+										weight = 0.064
+									},
+									{
+										morph = "Mouth_Ii2"
+										weight = 0.043
+									},
+									{
+										morph = "Mouth_Laugh"
+										weight = 0.107
+									},
+									{
+										morph = "Mouth_TeethOFF"
+										weight = 0.096
+									},
+									{
+										morph = "Mouth_oo___2"
+										weight = 0.784
+									},
+								]
 							},
 							{
-								morph = "EYE_Wink_R"
-								weight = 1.0
-							},
-							{
-								morph = "Eye_Relax"
-								weight = 0.48
-							},
-							{
-								morph = "Mouth_Laugh"
-								weight = 0.226
+								_class = "MorphFrame"
+								name = "happy"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								morph_weights = 
+								[
+									{
+										morph = "EYE_Wink_R"
+										weight = 1.0
+									},
+									{
+										morph = "Mouth_Aa7Shout"
+										weight = 0.331
+									},
+									{
+										morph = "Mouth_Ii2"
+										weight = 0.309
+									},
+								]
 							},
 						]
 					},
 					{
-						_class = "MorphFrame"
-						name = "happy"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						morph_weights = 
+						_class = "Folder"
+						name = "Body_Pose"
+						children = 
 						[
 							{
-								morph = "EYE_Wink_R"
-								weight = 1.0
-							},
-							{
-								morph = "Mouth_Aa7Shout"
-								weight = 0.331
-							},
-							{
-								morph = "Mouth_Ii2"
-								weight = 0.309
+								_class = "AnimFile"
+								name = "neko11"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "models/neko11.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 0
+								reverse = false
 							},
 						]
 					},
 					{
-						_class = "AnimBindPose"
-						name = "wow"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						frame_count = 1
-						frame_rate = 30
+						_class = "Folder"
+						name = "DE"
+						children = 
+						[
+							{
+								_class = "MorphFrame"
+								name = "DE"
+								children = 
+								[
+									{
+										_class = "SkeletalInputSettings"
+										name = "Left_Hand_WIP_"
+										children = 
+										[
+											{
+												_class = "Finger Chain"
+												name = "Thumb"
+												children = 
+												[
+													{
+														_class = "Finger Bone"
+														name = "Thumb_1"
+														bone = "Bip001_L_Finger02"
+														axis = [ 0.0, 0.0, 1.0 ]
+														minangle = -180.0
+														maxangle = 180.0
+														radius = 0.5
+														capsulepos1 = [ 0.129874, -0.47714, 0.326511 ]
+														capsulepos2 = [ 2.13618, -0.590143, 0.532239 ]
+													},
+													{
+														_class = "Finger Source"
+														index = 0
+														weight = 1.0
+													},
+													{
+														_class = "Finger Bone"
+														name = "Thumb_2"
+														bone = "Bip001_L_Finger01"
+														axis = [ 0.0, 0.0, 1.0 ]
+														minangle = -180.0
+														maxangle = 180.0
+														radius = 0.687075
+														capsulepos1 = [ 0.21514, -0.51425, 0.367469 ]
+														capsulepos2 = [ 1.895975, -0.404938, 0.385171 ]
+													},
+												]
+												tipparentbone = "Bip001_L_Finger01"
+												tipoffset = [ 2.350132, -0.434505, 0.311709 ]
+												metacarpalbone = "Bip001_L_Finger02"
+												splayaxis = [ 0.0, 1.0, 0.0 ]
+												splaymin = -180.0
+												splaymax = 180.0
+											},
+											{
+												_class = "Finger Chain"
+												name = "Index"
+												tipparentbone = ""
+												tipoffset = [ 0.0, 0.0, 0.0 ]
+												metacarpalbone = ""
+												splayaxis = [ 0.0, 1.0, 0.0 ]
+												splaymin = -180.0
+												splaymax = 180.0
+											},
+										]
+										disabled = true
+										handtype = 0
+									},
+								]
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								morph_weights = [  ]
+							},
+							{
+								_class = "AnimFile"
+								name = "neko"
+								activity_name = ""
+								activity_weight = 1
+								weight_list_name = ""
+								fade_in_time = 0.2
+								fade_out_time = 0.2
+								looping = false
+								delta = false
+								worldSpace = false
+								hidden = false
+								anim_markup_ordered = false
+								disable_compression = false
+								source_filename = "models/avatar_female_size01_tsubaki.fbx act.fbx"
+								start_frame = -1
+								end_frame = -1
+								framerate = -1.0
+								take = 0
+								reverse = false
+							},
+						]
 					},
 				]
 				default_root_bone_name = ""
 			},
+			{
+				_class = "IKData"
+				children = 
+				[
+					{
+						_class = "IKChain"
+						name = "hair"
+						note = "IK Data of hair"
+						children = 
+						[
+							{
+								_class = "IKChainJoint"
+								name = "MY_Bone_Hair_23"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "MY_Bone_Hair_01"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "MY_Bone_Hair_02"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "MY_Bone_Hair_03"
+														children = 
+														[
+															{
+																_class = "IKChainJoint"
+																name = "MY_Bone_Hair_04"
+																bone = "MY_Bone_Hair_04"
+															},
+														]
+														bone = "MY_Bone_Hair_03"
+													},
+												]
+												bone = "MY_Bone_Hair_02"
+											},
+										]
+										bone = "MY_Bone_Hair_01"
+									},
+								]
+								bone = "MY_Bone_Hair_23"
+							},
+						]
+						m_bDoBonesOrientAlongPositiveX = true
+						"m_DefaultSolverSettings.m_nNumIterations" = 6
+						"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_Perlin"
+						"m_DefaultTargetSettings.m_Bone" = 
+						{
+							m_Name = "MY_Bone_Hair_04"
+						}
+						"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+						"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+						{
+							m_id = 4294967295
+						}
+						"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+						{
+							m_Name = ""
+						}
+						"m_Data.m_bParentJointRequiresAlignment" = true
+					},
+					{
+						_class = "Folder"
+						name = "leg"
+						note = "IK Data of legs"
+						children = 
+						[
+							{
+								_class = "IKChain"
+								name = "leg_left"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001_L_Thigh"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "Bip001_L_Foot"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "Bip001_L_Toe0"
+														bone = "Bip001_L_Toe0"
+													},
+												]
+												bone = "Bip001_L_Foot"
+											},
+										]
+										bone = "Bip001_L_Thigh"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_CCD"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "Bip001_L_Toe0"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+							{
+								_class = "IKChain"
+								name = "leg_right"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001_R_Thigh"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "Bip001_R_Foot"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "Bip001_R_Toe0"
+														bone = "Bip001_R_Toe0"
+													},
+												]
+												bone = "Bip001_R_Foot"
+											},
+										]
+										bone = "Bip001_R_Thigh"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "Bip001_R_Toe0"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "arm"
+						note = "IK Data of arms"
+						children = 
+						[
+							{
+								_class = "IKChain"
+								name = "arm_left"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001_L_Clavicle"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "Bip001_L_UpperArm"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "Bip001_L_Hand"
+														bone = "Bip001_L_Hand"
+													},
+												]
+												bone = "Bip001_L_UpperArm"
+											},
+										]
+										bone = "Bip001_L_Clavicle"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "Bip001_L_Hand"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+							{
+								_class = "IKChain"
+								name = "arm_right"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001_R_Clavicle"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "Bip001_R_UpperArm"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "Bip001_R_Hand"
+														bone = "Bip001_R_Hand"
+													},
+												]
+												bone = "Bip001_R_UpperArm"
+											},
+										]
+										bone = "Bip001_R_Clavicle"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "Bip001_R_Hand"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+							{
+								_class = "Folder"
+								name = "uparm"
+							},
+							{
+								_class = "IKChain"
+								name = "uparm_left"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001_L_Clavicle1"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "Bip001_L_UpperArm1"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "Elbow_L"
+														bone = "Elbow_L"
+													},
+												]
+												bone = "Bip001_L_UpperArm"
+											},
+										]
+										bone = "Bip001_L_Clavicle"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "Elbow_L"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+							{
+								_class = "IKChain"
+								name = "uparm_right"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001_R_Clavicle1"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "Bip001_R_UpperArm1"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "Elbow_R"
+														bone = "Elbow_R"
+													},
+												]
+												bone = "Bip001_R_UpperArm"
+											},
+										]
+										bone = "Bip001_R_Clavicle"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "Elbow_R"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "tail"
+						note = "IK Data of tails"
+						children = 
+						[
+							{
+								_class = "IKChain"
+								name = "tail_left"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001_Pelvis"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "MY_Bone_Tail_L01"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "MY_Bone_Tail_L02"
+														children = 
+														[
+															{
+																_class = "IKChainJoint"
+																name = "MY_Bone_Tail_L03"
+																children = 
+																[
+																	{
+																		_class = "IKChainJoint"
+																		name = "MY_Bone_Tail_L04"
+																		children = 
+																		[
+																			{
+																				_class = "IKChainJoint"
+																				name = "MY_Bone_Tail_L05"
+																				children = 
+																				[
+																					{
+																						_class = "IKChainJoint"
+																						name = "MY_Bone_Tail_L06"
+																						bone = "MY_Bone_Tail_L06"
+																					},
+																				]
+																				bone = "MY_Bone_Tail_L05"
+																			},
+																		]
+																		bone = "MY_Bone_Tail_L04"
+																	},
+																]
+																bone = "MY_Bone_Tail_L03"
+															},
+														]
+														bone = "MY_Bone_Tail_L02"
+													},
+												]
+												bone = "MY_Bone_Tail_L01"
+											},
+										]
+										bone = "Bip001_Pelvis"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "MY_Bone_Tail_L06"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+							{
+								_class = "IKChain"
+								name = "tail_right"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001_Pelvis1"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "MY_Bone_Tail_R01"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "MY_Bone_Tail_R02"
+														children = 
+														[
+															{
+																_class = "IKChainJoint"
+																name = "MY_Bone_Tail_R03"
+																children = 
+																[
+																	{
+																		_class = "IKChainJoint"
+																		name = "MY_Bone_Tail_R04"
+																		children = 
+																		[
+																			{
+																				_class = "IKChainJoint"
+																				name = "MY_Bone_Tail_R05"
+																				children = 
+																				[
+																					{
+																						_class = "IKChainJoint"
+																						name = "MY_Bone_Tail_R06"
+																						bone = "MY_Bone_Tail_R06"
+																					},
+																				]
+																				bone = "MY_Bone_Tail_R05"
+																			},
+																		]
+																		bone = "MY_Bone_Tail_R04"
+																	},
+																]
+																bone = "MY_Bone_Tail_R03"
+															},
+														]
+														bone = "MY_Bone_Tail_R02"
+													},
+												]
+												bone = "MY_Bone_Tail_R01"
+											},
+										]
+										bone = "Bip001_Pelvis"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "MY_Bone_Tail_R06"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "weapon"
+						note = "IK Data of weapons"
+						children = 
+						[
+							{
+								_class = "IKChain"
+								name = "weapon_left"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip001"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "Weapon_L01"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "Weapon_L02"
+														bone = "Weapon_L02"
+													},
+												]
+												bone = "Weapon_L01"
+											},
+										]
+										bone = "Bip001"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "Weapon_L02"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+							{
+								_class = "IKChain"
+								name = "weapon_right"
+								children = 
+								[
+									{
+										_class = "IKChainJoint"
+										name = "Bip002"
+										children = 
+										[
+											{
+												_class = "IKChainJoint"
+												name = "Weapon_R01"
+												children = 
+												[
+													{
+														_class = "IKChainJoint"
+														name = "Weapon_R02"
+														bone = "Weapon_R02"
+													},
+												]
+												bone = "Weapon_R01"
+											},
+										]
+										bone = "Bip001"
+									},
+								]
+								m_bDoBonesOrientAlongPositiveX = true
+								"m_DefaultSolverSettings.m_nNumIterations" = 6
+								"m_DefaultSolverSettings.m_SolverType " = "IKSOLVER_TwoBone"
+								"m_DefaultTargetSettings.m_Bone" = 
+								{
+									m_Name = "Weapon_R02"
+								}
+								"m_DefaultTargetSettings.m_TargetSource" = "Bone"
+								"m_Data.m_DefaultTargetSettings.m_AnimgraphParameterNamePosition" = 
+								{
+									m_id = 4294967295
+								}
+								"m_Data.m_EndEffectorFixedOffsetAttachment" = 
+								{
+									m_Name = ""
+								}
+								"m_Data.m_bParentJointRequiresAlignment" = true
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "JiggleBoneList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "Ear"
+						children = 
+						[
+							{
+								_class = "JiggleBone"
+								name = "ear_left"
+								jiggle_root_bone = "MY_Bone_Ear_L"
+								jiggle_type = 1
+								has_yaw_constraint = true
+								has_pitch_constraint = true
+								has_angle_constraint = false
+								has_base_spring = true
+								allow_flex_length = true
+								invert_axes = true
+								has_collision = true
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = false
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = false
+								length = 5.0
+								tip_mass = 1.0
+								angle_limit = 0.0
+								min_yaw = 0.0
+								max_yaw = 0.0
+								yaw_friction = 0.0
+								yaw_bounce = 0.0
+								min_pitch = 0.0
+								max_pitch = 0.0
+								pitch_friction = 0.0
+								pitch_bounce = 0.0
+								base_mass = 5.0
+								base_stiffness = 5.0
+								base_damping = 0.0
+								base_left_min = 0.0
+								base_left_max = 0.0
+								base_left_friction = 0.0
+								base_up_min = 1.0
+								base_up_max = 7.0
+								base_up_friction = 5.0
+								base_forward_min = 1.0
+								base_forward_max = 5.0
+								base_forward_friction = 2.0
+								yaw_stiffness = 0.0
+								yaw_damping = 0.0
+								pitch_stiffness = 0.0
+								pitch_damping = 0.0
+								along_stiffness = 0.0
+								along_damping = 0.0
+								radius0 = 6.494359
+								radius1 = 1.988285
+								point0 = [ -1.727238, -0.667201, -0.057975 ]
+								point1 = [ 9.672447, 0.060201, 0.90893 ]
+							},
+							{
+								_class = "JiggleBone"
+								name = "ear_left1"
+								jiggle_root_bone = "MY_Bone_Ear_R"
+								jiggle_type = 1
+								has_yaw_constraint = true
+								has_pitch_constraint = true
+								has_angle_constraint = false
+								has_base_spring = true
+								allow_flex_length = true
+								invert_axes = true
+								has_collision = true
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = false
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = false
+								length = 5.0
+								tip_mass = 1.0
+								angle_limit = 0.0
+								min_yaw = 0.0
+								max_yaw = 0.0
+								yaw_friction = 0.0
+								yaw_bounce = 0.0
+								min_pitch = 0.0
+								max_pitch = 0.0
+								pitch_friction = 0.0
+								pitch_bounce = 0.0
+								base_mass = 5.0
+								base_stiffness = 5.0
+								base_damping = 0.0
+								base_left_min = 0.0
+								base_left_max = 0.0
+								base_left_friction = 0.0
+								base_up_min = 1.0
+								base_up_max = 7.0
+								base_up_friction = 5.0
+								base_forward_min = 1.0
+								base_forward_max = 5.0
+								base_forward_friction = 2.0
+								yaw_stiffness = 0.0
+								yaw_damping = 0.0
+								pitch_stiffness = 0.0
+								pitch_damping = 0.0
+								along_stiffness = 0.0
+								along_damping = 0.0
+								radius0 = 6.494359
+								radius1 = 1.988285
+								point0 = [ -1.15075, -0.630416, -0.009079 ]
+								point1 = [ 10.071455, 0.085661, 0.942773 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						name = "Neko_data"
+						note = "NEKO"
+						game_class = "prop_data"
+						game_keys = 
+						{
+							bakelighting = true
+							health = 100.0
+							min_impact_damage_speed = 3.0
+							impact_damage = 10.0
+							parent_bodygroup_name = "Neko"
+							parent_bodygroup_value = 0
+						}
+					},
+				]
+			},
+			{
+				_class = "Softbody"
+				children = 
+				[
+					{
+						_class = "ClothEffectSpeedup"
+						name = "Hair"
+						note = "ClothEffects of hair"
+						origin = [ 0.0, 0.0, 0.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						vertex_map = ""
+						cloth_effect_version = 0
+						Speedup = 1.0
+						bakedin = true
+						acceleration = false
+					},
+					{
+						_class = "ClothChain"
+						root_bone = "MY_Bone_Hair_04"
+						chain = 
+						{
+							joints = 
+							[
+								{
+									joint_name = "MY_Bone_Hair_04"
+									simulate = true
+									goal_strength = 0.5
+									vertex_map = "1"
+								},
+							]
+							attrs = 
+							{
+								joint_name = 
+								{
+									display = "Joint Name"
+									show = true
+									ui_order = 0
+									default = ""
+									lock = true
+								}
+								joint_parent = 
+								{
+									display = "Parent Joint"
+									show = true
+									ui_order = 6
+									default = ""
+									lock = true
+								}
+								simulate = 
+								{
+									display = "Simulate"
+									show = true
+									ui_order = 1
+									default = true
+								}
+								allow_rotation = 
+								{
+									display = "Allow Rotation"
+									show = true
+									ui_order = 8
+									default = true
+								}
+								stretch_spring = 
+								{
+									display = "Stretch Spring"
+									show = false
+									ui_order = 27
+									default = true
+								}
+								bend_spring = 
+								{
+									display = "Bend Spring"
+									show = false
+									ui_order = 28
+									default = true
+								}
+								torsion_spring = 
+								{
+									display = "Torsion Spring"
+									show = false
+									ui_order = 29
+									default = false
+								}
+								goal_strength = 
+								{
+									display = "Goal Strength"
+									show = true
+									ui_order = 2
+									default = 0.0
+									min = 0.0
+									max = 1.0
+								}
+								goal_damping = 
+								{
+									display = "Goal Damping"
+									show = true
+									ui_order = 5
+									default = 0.5
+									min = 0.0
+									max = 1.0
+								}
+								drag = 
+								{
+									display = "Extra Drag"
+									show = true
+									ui_order = 4
+									default = 1.0
+									min = 0.0
+									max = 1.0
+								}
+								mass = 
+								{
+									display = "Mass"
+									show = true
+									ui_order = 3
+									default = 0.3
+									min = 0.0
+								}
+								gravity_z = 
+								{
+									display = "Gravity"
+									show = false
+									ui_order = 34
+									default = 1.0
+								}
+								collision_radius = 
+								{
+									display = "Collision Radius"
+									show = false
+									ui_order = 35
+									default = 0.0
+									min = 0.0
+								}
+								lock_translation = 
+								{
+									display = "Lock Translation"
+									show = false
+									ui_order = 36
+									default = false
+								}
+								suspender = 
+								{
+									display = "Suspender Spring"
+									show = false
+									ui_order = 37
+									default = false
+								}
+								stray_radius = 
+								{
+									display = "Stray Radius"
+									show = false
+									ui_order = 38
+									default = 0.0
+									min = 0.0
+								}
+								stray_radius_stretchiness = 
+								{
+									display = "Stray Radius Stretchiness"
+									show = false
+									ui_order = 39
+									default = 0.0
+									min = 0.0
+								}
+								friction = 
+								{
+									display = "Friction"
+									show = false
+									ui_order = 40
+									default = 0.0
+									min = 0.0
+									max = 1.0
+								}
+								vertex_map = 
+								{
+									display = "Vertex Map"
+									show = true
+									ui_order = 7
+									default = ""
+									verify = "vertex_map"
+								}
+								end_effector = 
+								{
+									display = "End Effector"
+									show = false
+									ui_order = 42
+									default = 0.0
+									lock_default_value = true
+								}
+								extrude_sides = 
+								{
+									display = "Extrude Sides"
+									show = false
+									ui_order = 43
+									default = 0
+									min = 0
+									max = 4
+								}
+								extrude_radius = 
+								{
+									display = "Extrude Radius"
+									show = false
+									ui_order = 44
+									default = 5.0
+									min = 0.0
+								}
+								extrude_twist = 
+								{
+									display = "Extrude Twist"
+									show = false
+									ui_order = 45
+									default = 0.0
+								}
+							}
+							version = 0
+						}
+					},
+				]
+				stiffness_on_ragdoll = 0.0
+				cloth_sleep_enabled = false
+			},
+			{
+				_class = "ClothShapeList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "Hair"
+						note = "ClothShapes of hair"
+						children = 
+						[
+							{
+								_class = "ClothShapeBox"
+								name = "Hair01"
+								parent_bone = "MY_Bone_Hair_01"
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								vertex_map = ""
+								inverted_collision = false
+								dimensions = [ 5.822523, 2.265674, 4.593717 ]
+								origin = [ 3.005905, 0.752287, -0.885151 ]
+								angles = [ 0.000007, 5.035917, -0.000003 ]
+							},
+							{
+								_class = "ClothShapeBox"
+								name = "Hair02"
+								parent_bone = "MY_Bone_Hair_02"
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								vertex_map = ""
+								inverted_collision = false
+								dimensions = [ 4.866098, 3.053592, 6.027794 ]
+								origin = [ 1.759276, 1.045956, -0.986103 ]
+								angles = [ -0.000003, -1.572479, 0.000001 ]
+							},
+							{
+								_class = "ClothShapeBox"
+								name = "Hair03"
+								parent_bone = "MY_Bone_Hair_03"
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								vertex_map = ""
+								inverted_collision = false
+								dimensions = [ 5.661126, 4.346203, 6.775777 ]
+								origin = [ 0.768823, 1.210773, -0.826891 ]
+								angles = [ -0.000014, -7.953105, 0.000004 ]
+							},
+							{
+								_class = "ClothShapeBox"
+								name = "Hair04"
+								parent_bone = "MY_Bone_Hair_04"
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								vertex_map = ""
+								inverted_collision = false
+								dimensions = [ 9.077698, 6.8404, 8.994907 ]
+								origin = [ 1.532121, 1.420201, -1.033477 ]
+								angles = [ 0.0, 0.0, 0.0 ]
+							},
+						]
+					},
+					{
+						_class = "Folder"
+						name = "Body"
+						note = "ClothShapes of body"
+						children = 
+						[
+							{
+								_class = "ClothShapeBox"
+								name = "Body_Cloth_Left_02"
+								parent_bone = "MY_Bone_Sleeve_L02"
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								vertex_map = ""
+								inverted_collision = false
+								dimensions = [ 6.1184, 4.0, 12.267324 ]
+								origin = [ 4.031088, -0.859475, 1.201469 ]
+								angles = [ 0.026421, -6.793904, 10.174909 ]
+							},
+							{
+								_class = "ClothShapeBox"
+								name = "Body_Cloth_Left_01"
+								parent_bone = "MY_Bone_Sleeve_L01"
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								vertex_map = ""
+								inverted_collision = false
+								dimensions = [ 4.23487, 4.0, 9.622198 ]
+								origin = [ 5.906977, 0.35215, 1.243918 ]
+								angles = [ 0.025037, -10.286934, 10.174217 ]
+							},
+							{
+								_class = "ClothShapeBox"
+								name = "Body_Cloth_Right_01"
+								parent_bone = "MY_Bone_Sleeve_R01"
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								vertex_map = ""
+								inverted_collision = false
+								dimensions = [ 4.23487, 4.0, 9.622198 ]
+								origin = [ 5.53576, 1.814366, -1.151056 ]
+								angles = [ -3.570742, -9.653519, -10.075246 ]
+							},
+							{
+								_class = "ClothShapeBox"
+								name = "Body_Cloth_Right_02"
+								parent_bone = "MY_Bone_Sleeve_R02"
+								cloth_collision_layer0 = true
+								cloth_collision_layer1 = true
+								cloth_collision_layer2 = true
+								cloth_collision_layer3 = true
+								cloth_stickiness = 0.0
+								cloth_collision_priority = 0
+								vertex_map = ""
+								inverted_collision = false
+								dimensions = [ 6.1184, 4.0, 12.267324 ]
+								origin = [ 4.031113, 0.86143, -1.685374 ]
+								angles = [ -2.314972, -6.389005, -9.886059 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "Hitboxes"
+						note = "Auto add Hitboxes"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "Bip001_Pelvis"
+								parent_bone = "Bip001_Pelvis"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -10.939272, -10.177635, -16.028515 ]
+								hitbox_maxs = [ 14.058586, 8.403824, 17.565266 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Thigh"
+								parent_bone = "Bip001_L_Thigh"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -5.63699, -6.251783 ]
+								hitbox_maxs = [ 69.531731, 7.474128, 5.749699 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Foot"
+								parent_bone = "Bip001_L_Foot"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -2.313128, -5.097159, -4.124336 ]
+								hitbox_maxs = [ 8.53485, 11.596225, 3.007553 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Thigh"
+								parent_bone = "Bip001_R_Thigh"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -5.666328, -7.284891 ]
+								hitbox_maxs = [ 69.531685, 7.444789, 4.716593 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Foot"
+								parent_bone = "Bip001_R_Foot"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -2.317592, -4.934984, -4.535901 ]
+								hitbox_maxs = [ 8.530385, 11.758406, 2.595985 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_Spine"
+								parent_bone = "Bip001_Spine"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -11.655654, -10.314642, -14.433555 ]
+								hitbox_maxs = [ 15.339463, 8.142635, 15.970328 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_Spine1"
+								parent_bone = "Bip001_Spine1"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -8.241625, -6.695769, -9.351148 ]
+								hitbox_maxs = [ 14.084383, 8.418992, 10.88798 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_Spine2"
+								parent_bone = "Bip001_Spine2"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -6.932833, -6.380603, -7.654548 ]
+								hitbox_maxs = [ 19.791224, 8.879565, 9.191445 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Clavicle"
+								parent_bone = "Bip001_L_Clavicle"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.182595, -7.575075, -7.574197 ]
+								hitbox_maxs = [ 13.834038, 3.991319, 4.406646 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Forearm_Adv"
+								parent_bone = "Bip001_L_Forearm_Adv"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -2.230904, -7.591535, -7.566557 ]
+								hitbox_maxs = [ 14.963638, 6.42732, 7.815653 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_ForeTwist"
+								parent_bone = "Bip001_L_ForeTwist"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -5.73316, -7.591598, -7.56636 ]
+								hitbox_maxs = [ 12.691782, 6.427775, 8.195692 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Sleeve_L03"
+								parent_bone = "MY_Bone_Sleeve_L03"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -1.152296, -2.493581 ]
+								hitbox_maxs = [ 5.478188, 1.477731, 4.2873 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Hand"
+								parent_bone = "Bip001_L_Hand"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -1.841824, -4.49926 ]
+								hitbox_maxs = [ 6.543255, 1.466108, 1.717042 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger0"
+								parent_bone = "Bip001_L_Finger0"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -1.408549, -0.668774 ]
+								hitbox_maxs = [ 4.758691, 1.132692, 2.638496 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger01"
+								parent_bone = "Bip001_L_Finger01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.828814, -1.42118, -0.563179 ]
+								hitbox_maxs = [ 3.387307, 0.582294, 1.948404 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger1"
+								parent_bone = "Bip001_L_Finger1"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.510693, -1.345463, -1.583849 ]
+								hitbox_maxs = [ 3.706999, 0.685316, 1.213165 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger11"
+								parent_bone = "Bip001_L_Finger11"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -0.972483, -1.208558 ]
+								hitbox_maxs = [ 2.540586, 0.5, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger2"
+								parent_bone = "Bip001_L_Finger2"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.688295, -1.302225, -2.083158 ]
+								hitbox_maxs = [ 3.896545, 0.823318, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger21"
+								parent_bone = "Bip001_L_Finger21"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -0.942551, -1.313848 ]
+								hitbox_maxs = [ 2.784935, 0.5, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger3"
+								parent_bone = "Bip001_L_Finger3"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.678406, -1.193317, -2.145019 ]
+								hitbox_maxs = [ 3.621136, 0.915407, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger31"
+								parent_bone = "Bip001_L_Finger31"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -0.909685, -1.395166 ]
+								hitbox_maxs = [ 2.389242, 0.5, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger4"
+								parent_bone = "Bip001_L_Finger4"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.503633, -1.56566, -2.130205 ]
+								hitbox_maxs = [ 2.554022, 0.534693, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_Finger41"
+								parent_bone = "Bip001_L_Finger41"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.673929, -0.873795, -1.358404 ]
+								hitbox_maxs = [ 1.694107, 0.5, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_L_UpArmTwist02"
+								parent_bone = "Bip001_L_UpArmTwist02"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -5.491898, -7.563619, -5.221908 ]
+								hitbox_maxs = [ 14.270794, 5.587259, 6.970574 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Sleeve_L01"
+								parent_bone = "MY_Bone_Sleeve_L01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -3.121468, -6.346654 ]
+								hitbox_maxs = [ 15.113155, 2.380008, 8.449872 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_Neck"
+								parent_bone = "Bip001_Neck"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -7.148861, -3.387163, -4.975294 ]
+								hitbox_maxs = [ 7.675616, 7.005075, 6.512271 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_Head"
+								parent_bone = "Bip001_Head"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -5.521492, -9.819424, -11.374783 ]
+								hitbox_maxs = [ 25.782658, 10.660595, 12.911812 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_23"
+								parent_bone = "MY_Bone_Hair_23"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -3.552255, -5.660586 ]
+								hitbox_maxs = [ 6.438768, 6.496164, 4.434169 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_01"
+								parent_bone = "MY_Bone_Hair_01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -2.432611, -2.496651, -6.93575 ]
+								hitbox_maxs = [ 11.215723, 4.938912, 5.42405 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_02"
+								parent_bone = "MY_Bone_Hair_02"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -5.72343, -3.33593, -8.050059 ]
+								hitbox_maxs = [ 8.307422, 5.429521, 6.616038 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_03"
+								parent_bone = "MY_Bone_Hair_03"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -8.725674, -5.476505, -10.073332 ]
+								hitbox_maxs = [ 11.592443, 7.540766, 8.687243 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_05"
+								parent_bone = "MY_Bone_Hair_05"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -0.5, -4.730143 ]
+								hitbox_maxs = [ 8.565671, 1.781414, 1.135018 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_06"
+								parent_bone = "MY_Bone_Hair_06"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -4.800358, -0.875004, -7.415991 ]
+								hitbox_maxs = [ 13.092089, 2.298599, 3.249632 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_08"
+								parent_bone = "MY_Bone_Hair_08"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -0.5, -2.581472 ]
+								hitbox_maxs = [ 8.045068, 1.781475, 3.283662 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_09"
+								parent_bone = "MY_Bone_Hair_09"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -5.317076, -0.811213, -4.695899 ]
+								hitbox_maxs = [ 12.575361, 2.362433, 5.96971 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_11"
+								parent_bone = "MY_Bone_Hair_11"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -2.911196, -3.221588, -5.840131 ]
+								hitbox_maxs = [ 8.557178, 2.321304, 1.847355 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_12"
+								parent_bone = "MY_Bone_Hair_12"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -3.767848, -3.663365, -5.290966 ]
+								hitbox_maxs = [ 10.011542, 1.609511, 1.891747 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_15"
+								parent_bone = "MY_Bone_Hair_15"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -2.891872, -1.684685, -1.847361 ]
+								hitbox_maxs = [ 8.57652, 3.858196, 5.840129 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_16"
+								parent_bone = "MY_Bone_Hair_16"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -4.019446, -2.147055, -1.891391 ]
+								hitbox_maxs = [ 9.759965, 3.125808, 5.291329 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_19"
+								parent_bone = "MY_Bone_Hair_19"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -3.431186, -2.121077 ]
+								hitbox_maxs = [ 6.091451, 2.299681, 1.092964 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Hair_21"
+								parent_bone = "MY_Bone_Hair_21"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -2.184179, -1.889731 ]
+								hitbox_maxs = [ 5.673423, 3.546685, 1.324322 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Clavicle"
+								parent_bone = "Bip001_R_Clavicle"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -3.207325, -7.558043, -4.100785 ]
+								hitbox_maxs = [ 12.329395, 4.060184, 7.910612 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Forearm_Adv"
+								parent_bone = "Bip001_R_Forearm_Adv"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -3.244431, -6.42599, -8.722479 ]
+								hitbox_maxs = [ 13.950123, 7.592862, 6.659708 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_ForeTwist"
+								parent_bone = "Bip001_R_ForeTwist"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -6.834678, -7.593874, -7.039764 ]
+								hitbox_maxs = [ 11.590256, 6.425497, 8.722281 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Sleeve_R03"
+								parent_bone = "MY_Bone_Sleeve_R03"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -1.641475, -4.286499 ]
+								hitbox_maxs = [ 4.021145, 0.988553, 2.494382 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Hand"
+								parent_bone = "Bip001_R_Hand"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.544081, -0.661171, -1.717351 ]
+								hitbox_maxs = [ 5.55867, 2.646769, 4.484062 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger0"
+								parent_bone = "Bip001_R_Finger0"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.004354, -1.421589, -1.196848 ]
+								hitbox_maxs = [ 4.224975, 1.119651, 2.110409 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger01"
+								parent_bone = "Bip001_R_Finger01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.433526, -1.442042, -0.534973 ]
+								hitbox_maxs = [ 2.782592, 0.561439, 1.976612 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger1"
+								parent_bone = "Bip001_R_Finger1"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.53038, -0.5, -1.123707 ]
+								hitbox_maxs = [ 3.123838, 1.832346, 1.673308 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger11"
+								parent_bone = "Bip001_R_Finger11"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -0.5, -0.5 ]
+								hitbox_maxs = [ 1.493689, 1.270754, 1.298401 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger2"
+								parent_bone = "Bip001_R_Finger2"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.685286, -0.5, -0.5 ]
+								hitbox_maxs = [ 3.084061, 1.993099, 2.051292 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger21"
+								parent_bone = "Bip001_R_Finger21"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.829288, -0.5, -0.5 ]
+								hitbox_maxs = [ 1.733242, 1.46888, 1.282262 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger3"
+								parent_bone = "Bip001_R_Finger3"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.624264, -0.5, -0.685163 ]
+								hitbox_maxs = [ 2.96534, 2.103397, 1.905309 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger31"
+								parent_bone = "Bip001_R_Finger31"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.947077, -0.5, -0.5 ]
+								hitbox_maxs = [ 1.33877, 1.37919, 1.155802 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger4"
+								parent_bone = "Bip001_R_Finger4"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.395765, -0.5, -0.5 ]
+								hitbox_maxs = [ 2.271988, 1.753466, 1.843785 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_Finger41"
+								parent_bone = "Bip001_R_Finger41"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.644028, -0.5, -0.5 ]
+								hitbox_maxs = [ 0.724003, 1.372877, 1.072308 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Bip001_R_UpArmTwist02"
+								parent_bone = "Bip001_R_UpArmTwist02"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -6.536366, -7.346736, -6.032127 ]
+								hitbox_maxs = [ 13.226334, 5.76551, 6.359719 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Sleeve_R01"
+								parent_bone = "MY_Bone_Sleeve_R01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -1.584059, -8.453625 ]
+								hitbox_maxs = [ 15.11267, 3.91665, 6.34298 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_L01"
+								parent_bone = "MY_Bone_Tail_L01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.508626, -2.178117, -2.807046 ]
+								hitbox_maxs = [ 14.545599, 1.890079, 1.203633 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_L02"
+								parent_bone = "MY_Bone_Tail_L02"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.805408, -2.134314, -2.806916 ]
+								hitbox_maxs = [ 15.214298, 1.929876, 1.190552 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_L03"
+								parent_bone = "MY_Bone_Tail_L03"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -5.47105, -2.111941, -2.806828 ]
+								hitbox_maxs = [ 15.883017, 1.974401, 1.190537 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_L04"
+								parent_bone = "MY_Bone_Tail_L04"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -4.802341, -2.067182, -2.806709 ]
+								hitbox_maxs = [ 11.217373, 1.99669, 1.190449 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_L05"
+								parent_bone = "MY_Bone_Tail_L05"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -4.133633, -2.022464, -2.806573 ]
+								hitbox_maxs = [ 18.39233, 2.059014, 1.190378 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_R01"
+								parent_bone = "MY_Bone_Tail_R01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.745804, -2.178092, -2.980543 ]
+								hitbox_maxs = [ 14.545597, 1.890102, 1.270108 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_R02"
+								parent_bone = "MY_Bone_Tail_R02"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.805395, -2.134255, -2.727413 ]
+								hitbox_maxs = [ 15.214306, 1.929945, 1.270054 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_R03"
+								parent_bone = "MY_Bone_Tail_R03"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -5.471052, -2.111826, -2.727303 ]
+								hitbox_maxs = [ 15.883011, 1.974536, 1.270062 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_R04"
+								parent_bone = "MY_Bone_Tail_R04"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -4.802349, -2.067091, -2.727154 ]
+								hitbox_maxs = [ 11.217365, 1.996783, 1.270003 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Tail_R05"
+								parent_bone = "MY_Bone_Tail_R05"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -4.133659, -2.022328, -2.727029 ]
+								hitbox_maxs = [ 18.392319, 2.059171, 1.269922 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Skirt_01"
+								parent_bone = "MY_Bone_Skirt_01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -5.90168, -7.805408 ]
+								hitbox_maxs = [ 11.629791, 4.111335, 6.026743 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Skirt_03"
+								parent_bone = "MY_Bone_Skirt_03"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.703471, -4.275581, -3.913971 ]
+								hitbox_maxs = [ 12.493027, 4.60036, 9.714413 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Skirt_05"
+								parent_bone = "MY_Bone_Skirt_05"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -2.061753, -10.574318, -6.832873 ]
+								hitbox_maxs = [ 8.985006, 4.664368, 5.158354 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Skirt_07"
+								parent_bone = "MY_Bone_Skirt_07"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -2.625279, -10.586977, -3.729211 ]
+								hitbox_maxs = [ 8.421463, 4.651707, 3.719807 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Skirt_09"
+								parent_bone = "MY_Bone_Skirt_09"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -1.795229, -4.402807, -8.64031 ]
+								hitbox_maxs = [ 11.401239, 4.473144, 4.988081 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Skirt_11"
+								parent_bone = "MY_Bone_Skirt_11"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -5.922304, -5.832167 ]
+								hitbox_maxs = [ 10.105959, 4.090702, 7.999992 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Skirt_13"
+								parent_bone = "MY_Bone_Skirt_13"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -6.127233, -2.89827 ]
+								hitbox_maxs = [ 6.45197, 3.701978, 5.346739 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "MY_Bone_Skirt_15"
+								parent_bone = "MY_Bone_Skirt_15"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -0.5, -6.149431, -3.969552 ]
+								hitbox_maxs = [ 5.770865, 3.679768, 4.275447 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Weapon_L01"
+								parent_bone = "Weapon_L01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -9.334221, -5.303829, -0.5 ]
+								hitbox_maxs = [ 13.757713, 1.178755, 1.749508 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "Weapon_R01"
+								parent_bone = "Weapon_R01"
+								surface_property = "flesh"
+								translation_only = false
+								tags = ""
+								hitbox_mins = [ -9.448573, -1.203612, -1.798422 ]
+								hitbox_maxs = [ 13.643378, 5.278985, 0.5 ]
+							},
+						]
+					},
+				]
+			},
 		]
 		model_archetype = "physics_prop_model"
 		primary_associated_entity = "prop_physics"
-		anim_graph_name = ""
+		anim_graph_name = "models/player/player_anims_shared.vanmgrph"
 		base_model_name = ""
 	}
 }

@@ -2,18 +2,20 @@
 
 Layer0
 {
-	shader "mtoon.vfx"
+	shader "mtoon.shader"
 
 	//---- Animation ----
 	F_MORPH_SUPPORTED 1
 
+	//---- Blending ----
+	F_ADDITIVE_BLEND 1
+
 	//---- MToon Outline (WIP) ----
+	F_OUTLINE_COLOR_MODE 1 // MixedLighting
 	F_OUTLINE_WIDTH_MODE 1 // WorldCoordinates
 
-	//---- Rendering ----
-	F_DO_NOT_CAST_SHADOWS 1
-	F_RENDER_BACKFACES 1
-	F_RENDERING_TYPE 1 // Cutout
+	//---- Texture Filtering ----
+	F_TEXTURE_FILTERING 4 // Nearest Neighbour
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
@@ -25,44 +27,44 @@ Layer0
 	//---- Material ----
 	g_flTintColor "[1.000000 1.000000 1.000000 0.000000]"
 	TextureAmbientOcclusion "[1.000000 1.000000 1.000000 0.000000]"
-	TextureBlendMask "materials/default/default_blend.tga"
+	TextureBlendMask "[1.000000 1.000000 1.000000 0.000000]"
 	TextureColor "materials/models/neko/Tsubaki_Face_D.png"
-	TextureMetalness "materials/default/default_metal.tga"
-	TextureNormal "materials/default/default_normal.tga"
-	TextureRoughness "materials/default/default_rough.tga"
-	TextureTranslucency "materials/default/default_trans.tga"
+	TextureMetalness "[1.000000 1.000000 1.000000 0.000000]"
+	TextureNormal "materials/models/neko/Famale_Face_lightmap_FX.png"
+	TextureRoughness "[0.500000 0.500000 0.500000 0.000000]"
+	TextureTintMask "materials/default/default.tga"
 
 	//---- MToon Color ----
-	Cutoff "0.500"
 	InputLitTexture "materials/models/neko/Tsubaki_Face_D.png"
-	InputShadeTexture "[0.000000 0.000000 0.000000 1.000000]"
-	LitColor "[0.819608 0.713726 0.635294 1.000000]"
-	ShadeColor "[1.000000 1.000000 1.000000 1.000000]"
+	InputShadeTexture "materials/models/neko/Tsubaki_Face_D.png"
+	LitColor "[1.000000 0.796079 0.686275 1.000000]"
+	ShadeColor "[0.262745 0.168627 0.125490 1.000000]"
 
 	//---- MToon Emission ----
-	EmissionColor "[0.000000 0.000000 0.000000 1.000000]"
-	InputEmissionMap "[1.000000 0.854902 0.725490 1.000000]"
+	EmissionColor "[0.000000 0.000000 0.000000 0.439216]"
+	InputEmissionMap "[1.000000 1.000000 1.000000 1.000000]"
 	InputMatCap "[0.000000 0.000000 0.000000 1.000000]"
 
 	//---- MToon Lighting ----
-	IndirectLightIntensity "0.000"
-	InputShadingGradeTexture "[1.000000 0.854902 0.725490 1.000000]"
+	IndirectLightIntensity "0.497"
+	InputShadingGradeTexture "[0.000000 0.000000 0.000000 1.000000]"
 	LightColorAttenuation "0.000"
-	ShadingGradeRate "1.000"
-	ShadingShift "0.345"
-	ShadingToony "0.784"
+	ShadingGradeRate "0.230"
+	ShadingShift "0.193"
+	ShadingToony "0.443"
 
 	//---- MToon Outline ----
-	InputOutlineWidthTexture "[0.149020 0.164706 0.184314 1.000000]"
-	OutlineColor "[0.388235 0.156863 0.137255 1.000000]"
-	OutlineWidth "0.484"
+	InputOutlineWidthTexture "[0.800000 0.317647 0.200000 1.000000]"
+	OutlineColor "[0.035294 0.023529 0.019608 1.000000]"
+	OutlineLightingMix "1.000"
+	OutlineWidth "0.388"
 
 	//---- MToon Rim ----
-	InputRimTexture "[0.090196 0.054902 0.027451 1.000000]"
-	RimColor "[0.313726 0.152941 0.039216 1.000000]"
-	RimFresnelPower "0.000"
-	RimLift "0.000"
-	RimLightingMix "0.725"
+	InputRimTexture "[0.537255 0.505882 0.450980 1.000000]"
+	RimColor "[0.411765 0.317647 0.274510 1.000000]"
+	RimFresnelPower "16.374"
+	RimLift "0.140"
+	RimLightingMix "0.509"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
